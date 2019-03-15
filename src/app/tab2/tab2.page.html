@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tab Two
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list inset="true" lines="none">
+    <!--     -->
+    <ion-item-sliding>
+      <ion-item color="primary" detail-icon="save" detail="true">
+        <ion-label>Item</ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item-sliding>
+      <ion-item color="secondary" detail-icon="pie" detail="true">
+        <ion-label>Item</ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

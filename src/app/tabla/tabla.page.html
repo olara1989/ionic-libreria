@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>tabla</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-input type="number" placeholder="Coloca el numero" [(ngModel)]="num" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-button color="primary" (click)="generar_tabla()">Calcular</ion-button>
+    </ion-item>
+       <ul *ngFor="let n of multiplos; let i = index">
+         <li>{{num}} x {{i+1}} = {{n}}</li>
+       </ul>    
+  </ion-list>
+</ion-content>
